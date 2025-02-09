@@ -16,7 +16,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
   },
 }));
 
-const Drawerr = ({drawerWidth,setmyMOde,noneORblock,drawerType,hideDrawer,}) => 
+const Drawerr = ({drawerWidth,setmyMOde,noneORblock,drawerType,hideDrawer}) => 
   {
   const currentLocation = useLocation();
   const navigate = useNavigate();
@@ -96,7 +96,7 @@ const Drawerr = ({drawerWidth,setmyMOde,noneORblock,drawerType,hideDrawer,}) =>
             >
               <ListItemButton
                 onClick={() => {
-                  navigate(item.path);
+                  navigate(item.path);hideDrawer();
                 }}
               >
                 <ListItemIcon>{item.icon}</ListItemIcon>
